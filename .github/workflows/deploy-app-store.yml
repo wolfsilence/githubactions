@@ -22,9 +22,9 @@ jobs:
       EXPORT_OPTIONS: ./ExportOptions.plist
 
       # ★★★ 换项目只改下面三行 ★★★
-      TEAM_ID:        "VFQ3D59FGD"
-      PROJECT_NAME:   "Uangkucatatan"
-      BUNDLE_ID:      "com.uangkucatatan.app"
+      TEAM_ID:        "262TL285Q2"
+      PROJECT_NAME:   "GitHubActions"
+      BUNDLE_ID:      "com.githubactions.app"
 
     steps:
       # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -49,7 +49,7 @@ jobs:
       # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
       - name: 🔑 Setup App Store Connect
         env:
-          ASC_API_KEY:   ${{ secrets.APP_STORE_CONNECT_API_KEY }}
+          ASC_API_KEY:   ${{ secrets.APP_STORE_CONNECT_KEY_ID_NEW }}
           ASC_KEY_ID:    ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
           ASC_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
         run: |
