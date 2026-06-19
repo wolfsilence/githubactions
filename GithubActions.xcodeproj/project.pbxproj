@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		856413352FE5126500B06BB7 /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 856413342FE5126500B06BB7 /* AppsFlyerLib-Static */; };
+		8564133A2FE52F9000B06BB7 /* Gzip in Frameworks */ = {isa = PBXBuildFile; productRef = 856413392FE52F9000B06BB7 /* Gzip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8564133A2FE52F9000B06BB7 /* Gzip in Frameworks */,
 				856413352FE5126500B06BB7 /* AppsFlyerLib-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +86,7 @@
 			name = GithubActions;
 			packageProductDependencies = (
 				856413342FE5126500B06BB7 /* AppsFlyerLib-Static */,
+				856413392FE52F9000B06BB7 /* Gzip */,
 			);
 			productName = GithubActions;
 			productReference = 85640FE12FE382AC00B06BB7 /* GithubActions.app */;
@@ -116,6 +119,7 @@
 			packageReferences = (
 				856413332FE5126500B06BB7 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
 				856413372FE52CD000B06BB7 /* XCRemoteSwiftPackageReference "ios_sdk" */,
+				856413382FE52F9000B06BB7 /* XCRemoteSwiftPackageReference "GzipSwift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 85640FE22FE382AC00B06BB7 /* Products */;
@@ -167,7 +171,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kubi.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -200,7 +204,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kubi.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -363,8 +367,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
+				kind = exactVersion;
+				version = 7.0.0;
 			};
 		};
 		856413372FE52CD000B06BB7 /* XCRemoteSwiftPackageReference "ios_sdk" */ = {
@@ -375,6 +379,14 @@
 				kind = branch;
 			};
 		};
+		856413382FE52F9000B06BB7 /* XCRemoteSwiftPackageReference "GzipSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1024jp/GzipSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -382,6 +394,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 856413332FE5126500B06BB7 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
 			productName = "AppsFlyerLib-Static";
+		};
+		856413392FE52F9000B06BB7 /* Gzip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 856413382FE52F9000B06BB7 /* XCRemoteSwiftPackageReference "GzipSwift" */;
+			productName = Gzip;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

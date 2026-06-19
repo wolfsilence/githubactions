@@ -1,5 +1,5 @@
 {
-  "originHash" : "2bc9b6e15f5ee14f451bec851d003f1e8354f465c8746bcca41b203d69d9829f",
+  "originHash" : "06befc65f60eec9b1bd82c12b3b751957ed827f7f8d0116e4bc8a8a49632a780",
   "pins" : [
     {
       "identity" : "adjust_signature_sdk",
@@ -35,6 +35,15 @@
       "state" : {
         "revision" : "c46e5f8b7c23265f17c24ca7f9fa1b13ded7a822",
         "version" : "8.1.1"
+      }
+    },
+    {
+      "identity" : "gzipswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/1024jp/GzipSwift",
+      "state" : {
+        "revision" : "56bf51fdd2fe4b2cf254b2cf34aede3d7caccc6c",
+        "version" : "6.1.0"
       }
     },
     {
