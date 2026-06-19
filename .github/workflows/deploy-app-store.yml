@@ -126,6 +126,10 @@ jobs:
           sed -i '' "s/DEVELOPMENT_TEAM = [A-Z0-9]*;/DEVELOPMENT_TEAM = ${TEAM_ID};/g" "$PBXPROJ"
           echo "✅ Team ID → ${TEAM_ID}"
 
+          # 改为自动签名（CI 机器无证书，让 Xcode 自动生成+上传）
+          sed -i '' "s/CODE_SIGN_STYLE = Manual;/CODE_SIGN_STYLE = Automatic;/g" "$PBXPROJ"
+          echo "✅ CODE_SIGN_STYLE → Automatic"
+
           # --- 从 Xcode 项目读取版本号 ---
           VERSION=$(grep -m1 'MARKETING_VERSION = ' "$PBXPROJ" | sed 's/.*MARKETING_VERSION = \(.*\);/\1/')
           echo "Version: $VERSION（来自 Xcode 项目）"
