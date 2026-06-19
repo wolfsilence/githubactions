@@ -120,6 +120,7 @@
 				856413332FE5126500B06BB7 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
 				856413372FE52CD000B06BB7 /* XCRemoteSwiftPackageReference "ios_sdk" */,
 				856413382FE52F9000B06BB7 /* XCRemoteSwiftPackageReference "GzipSwift" */,
+				85126DA82FE545D10073D2AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 85640FE22FE382AC00B06BB7 /* Products */;
@@ -363,6 +364,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		85126DA82FE545D10073D2AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 12.14.0;
+			};
+		};
 		856413332FE5126500B06BB7 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
