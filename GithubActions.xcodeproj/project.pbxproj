@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		856413352FE5126500B06BB7 /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 856413342FE5126500B06BB7 /* AppsFlyerLib-Static */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		85640FE12FE382AC00B06BB7 /* GithubActions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubActions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				856413352FE5126500B06BB7 /* AppsFlyerLib-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = GithubActions;
 			packageProductDependencies = (
+				856413342FE5126500B06BB7 /* AppsFlyerLib-Static */,
 			);
 			productName = GithubActions;
 			productReference = 85640FE12FE382AC00B06BB7 /* GithubActions.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 85640FD82FE382AC00B06BB7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				856413332FE5126500B06BB7 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 85640FE22FE382AC00B06BB7 /* Products */;
 			projectDirPath = "";
@@ -347,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		856413332FE5126500B06BB7 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		856413342FE5126500B06BB7 /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 856413332FE5126500B06BB7 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85640FD92FE382AC00B06BB7 /* Project object */;
 }
