@@ -22,9 +22,9 @@ jobs:
       EXPORT_OPTIONS: ./ExportOptions.plist
 
       # ★★★ 换项目只改下面三行 ★★★
-      TEAM_ID:        "262TL285Q2"
+      TEAM_ID:        "4LVW2WY94P"
       PROJECT_NAME:   "GitHubActions"
-      BUNDLE_ID:      "com.githubactions.app"
+      BUNDLE_ID:      "com.kubi.KubiLoan.app"
 
     steps:
       # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
